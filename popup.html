@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Redirector</title>
+    <style>
+      body {
+        width: 600px;
+        padding: 10px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      .remove-btn {
+        margin-left: 10px;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>URL Redirector</h1>
+    <input type="text" id="fromInput" placeholder="URL to redirect from" />
+    <input type="text" id="toInput" placeholder="URL to redirect to" />
+    <button id="addRedirect">Add Redirect Rule</button>
+    <h2>Current Redirect Rules:</h2>
+    <ul id="redirectRules"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
